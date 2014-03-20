@@ -1,0 +1,40 @@
+NAME – NITIN SHARMA UFID : 6399-9875 EMAIL : NITINSH99@UFL.EDU
+1.Compiler Used – G++
+2. How to compile:
+The submission contains ads.cpp file and 3 data files. Following
+command is required to compile the file.
+g++ -o a.o ads.cpp
+3. This will generate an output file a.o.
+4. Output file require at least two arguments to run. Arguments depend on random mode or user input mode.
+User input mode:
+(a) Simple scheme.
+I have included three files data1.txt, data2.txt and data3.txt. Each file contains a connected graph.
+To apply s-scheme on any of these graph. Write
+./a.o –s <data1.txt OR ./a.o –s <data2.txt OR ./a.o –s <data3.txt
+(b) Fibonacci scheme.
+In case of f-scheme and user mode,Write
+./a.o –f <data1.txt OR ./a.o –f <data2.txt OR ./a.o –f <data3.txt
+Random Mode:
+Random mode will write random data into a file called data_random.txt. This random data will be generated based on input “n” and “d” i.e. nodes and density respectively.
+In case of random mode write,
+./a.o –r n d {n is nodes and d is density}
+NOTE: This file will be automatically generated. Then use user input mode to run this file as described below.
+./a.o –s <data_random.txt OR ./a.o –f <data_random.txt
+5.Functions and program structure:
+HEADER FILE DECLARATION SECTION
+NODE STRUCTURE DECLARATION SECTION
+GLOBAL VARIABLES DECLARATION SECTION
+METHODS DECLARATION SECTION
+METHODS REALTED TO F-SCHEME DEFINED
+METHODS REALTED TO S-SCHEME DEFINED
+METHODS TO GENERATE RANDOM CONNECTED GRAPH
+MAIN FUNCTION
+PERFORMANCE ANALYSIS Node-1000
+Node-3000
+Node-5000
+NOTE:
+1. Results in all above cases meet expectation.
+2. F-scheme has very high performance as compared to S-scheme.
+3. As expected, with increasing density execution time also increases in both the schemes.
+4. Rate of change of execution time while going from 3000 to 5000 nodes is relatively
+larger then while going from 1000 nodes to 3000 nodes in both the schemes.
